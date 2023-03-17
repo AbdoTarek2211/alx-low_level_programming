@@ -5,10 +5,10 @@
 */
 int main(void)
 {
-int i;
+int i = 0;
 int j = i + 1;
 int k = j + 1;
-for (i = 0; i < 8; i++)
+for (; i < 8; i++)
 {
 for (; j < 9; j++)
 {
