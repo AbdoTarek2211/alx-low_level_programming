@@ -10,6 +10,9 @@ int i = 'A';
 for (; i <= 'Z'; i++)
 {
 putchar(tolower(i));
+}
+for (; i <= 'Z'; i++)
+{
 putchar(toupper(i));
 }
 printf("\n");
