@@ -6,7 +6,8 @@
 */
 int main(void)
 {
-for (int i = 'A';i <= 'Z';i++)
+int i = 'A';
+for(;i <= 'Z';i++)
 {
 putchar(tolower(i));
 printf("\n");
