@@ -5,14 +5,14 @@
 */
 int main(void)
 {
-int i = 0;
-int j = i + 1;
-int k = j + 1;
-for (; i < 8; i++)
+int i;
+int j;
+int k;
+for (int i = 0; i < 8; i++)
 {
-for (; j < 9; j++)
+for (int j = i + 1; j < 9; j++)
 {
-for (; k < 10; k++)
+for (int k = j + 1; k < 10; k++)
 {
 putchar((i % 10) + '0');
 putchar((j % 10) + '0');
