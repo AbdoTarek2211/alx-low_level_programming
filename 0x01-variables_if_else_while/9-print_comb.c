@@ -10,7 +10,7 @@ int j = 0;
 for (; j <= 9; j++)
 {
 putchar('0' + j);
-if(j == 9)
+if (j == 9)
 {
 break;
 }
