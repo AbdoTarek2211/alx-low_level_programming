@@ -7,7 +7,7 @@
 int main(void)
 {
 int i = 'A';
-for(; i <= 'Z'; i++)
+for (; i <= 'Z'; i++)
 {
 putchar(tolower(i));
 printf("\n");
