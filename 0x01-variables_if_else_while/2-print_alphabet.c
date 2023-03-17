@@ -11,5 +11,6 @@ for (; i <= 'Z'; i++)
 {
 putchar(tolower(i));
 }
+printf("\n");
 return (0);
 }
