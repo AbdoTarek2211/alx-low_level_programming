@@ -6,10 +6,10 @@
 */
 int main(void)
 {
-int i = 0;
-for (; i <= 9; i++)
+int j = 0;
+for (; j <= 9; j++)
 {
-printf("%d", i);
+printf("%d", j);
 }
 int i = 'A';
 for (; i <= 'F'; i++)
