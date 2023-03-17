@@ -9,7 +9,7 @@ int main(void)
 int i = 'A';
 for (; i <= 'Z'; i++)
 {
-if(i == 'E' || i == 'Q')
+if (i == 'E' || i == 'Q')
 {
 continue;
 }
