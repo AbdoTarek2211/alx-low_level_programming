@@ -1,5 +1,5 @@
 #include <stdlib.h>
-11;rgb:0000/0000/0000#include <time.h>
+#include <time.h>
 #include <stdio.h>
 /**
 * main - A program that prints a line with puts function
