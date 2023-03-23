@@ -1,7 +1,8 @@
 #include "main.h"
 /**
-* Main Function returns 0 
+* Main Function
 * print_alphabet - print all alphabet in lowercas
+* returns: 0
 */
 void print_alphabet(void)
 {
