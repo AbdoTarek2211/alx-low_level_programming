@@ -15,7 +15,7 @@ while (*z != '\0')
 z++;
 s++;
 }
-for (x = (s / 2); x <= (s - 1); x++)
+ for (x = (s / 2); x < s; x++)
 {
 _putchar(str[x]);
 }
