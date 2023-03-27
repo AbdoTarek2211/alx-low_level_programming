@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * reset_to_98 - resets a number to 98
- * @n: number to reset
+ * print_rev - reverse a string
+ * @s: string to be reversed
  *
  * Return: 0 or 1
  */
