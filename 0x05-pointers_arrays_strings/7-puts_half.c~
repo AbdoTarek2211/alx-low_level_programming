@@ -5,18 +5,19 @@
  *
  * Return: 0 or 1
  */
-void rev_string(char *s)
+void puts_half(char *str)
 {
-while (*s != '\0')
+int s = 0;
+int x;
+char *z = str;
+while (*z != '\0')
 {
+z++;
 s++;
 }
-s--;
-while (*s != '\0')
+for (x = (s/2); x <= (s - 1); x++)
 {
-_putchar(*s);
-s--;
-
+_putchar(str[x]);
 }
 _putchar('\n');
 }
