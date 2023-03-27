@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * puts2 - prints a string
- * @str : string to be printed
+ * print_array - prints array elements
+ * @a : array to be printed
+ * @n : number of elements
  *
  * Return: 0 or 1
  */
@@ -15,7 +16,7 @@ printf("%d, ", a[x]);
 }
 if (x == (n - 1))
 {
-printf ("%d", a[n-1]);
+printf("%d", a[n - 1]);
 }
 printf("\n");
 }
