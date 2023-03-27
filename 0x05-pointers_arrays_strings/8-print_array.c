@@ -8,7 +8,7 @@
 void print_array(int *a, int n)
 {
 int x;
-for (x = 0; x < n; x++)
+for (x = 0; x < n-1; x++)
 {
 _putchar(a[x]);
 _putchar(',');
