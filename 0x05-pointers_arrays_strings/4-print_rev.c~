@@ -1,0 +1,20 @@
+#include "main.h"
+/**
+ * reset_to_98 - resets a number to 98
+ * @n: number to reset
+ *
+ * Return: 0 or 1
+ */
+void print_rev(char *s)
+{
+while (*s != '\0')
+{
+s++;
+ }
+while (*s != '\0')
+{
+_putchar(*s);
+s--;
+}
+_putchar('\n');
+}
