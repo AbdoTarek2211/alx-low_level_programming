@@ -1,0 +1,25 @@
+#include "main.h"
+/**
+ * _puts2 - prints a string
+ * @str : string to be printed
+ *
+ * Return: 0 or 1
+ */
+void puts2(char *str)
+{
+int s = 0;
+int x;
+while (*str != '\0')
+{
+str++;
+s++;
+}
+for (x = 0; x <= s-1; x++)
+{
+if (x % 2 == 0)
+{
+_putchar(*str);
+}
+}
+_putchar('\n');
+}
