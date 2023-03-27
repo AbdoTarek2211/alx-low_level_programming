@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * puts2 - prints a string
- * @str : string to be printed
+ * _strcpy - copies a string into another string
+ * @src : string to be copied
+ * @dest : string to be placed at
  *
  * Return: 0 or 1
  */
