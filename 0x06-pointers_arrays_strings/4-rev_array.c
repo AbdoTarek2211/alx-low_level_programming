@@ -15,7 +15,6 @@ for (x = 0; x <= n / 2; x++)
 {
 y = a[x];
 a[x] = a[temp];
-a[temp] = y;
-temp--;
+a[temp--] = y;
 }
 }
