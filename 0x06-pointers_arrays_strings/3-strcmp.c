@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _strcpy - copies a string into another string
- * @src : string to be copied
- * @dest : string to be placed at
+ * _strcmp - compares two strings.
+ * @s1 : string to compare
+ * @s2 : string to be compared 
  *
  * Return: 0 or 1
  */
