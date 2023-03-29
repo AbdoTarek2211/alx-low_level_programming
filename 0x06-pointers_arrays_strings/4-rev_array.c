@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _strcpy - copies a string into another string
- * @src : string to be copied
- * @dest : string to be placed at
+ * reverse_array - reverses an array
+ * @a : array
+ * @n : number of elements
  *
  * Return: 0 or 1
  */
