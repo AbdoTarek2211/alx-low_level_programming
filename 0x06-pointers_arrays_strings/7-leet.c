@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * _strcpy - copies a string into another string
- * @src : string to be copied
- * @dest : string to be placed at
+ * leet - encodes a string into 1337.
+ * @s : string to be copied
  *
  * Return: 0 or 1
  */
