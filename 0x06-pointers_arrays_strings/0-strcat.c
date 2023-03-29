@@ -4,7 +4,7 @@
  * @dest : string of the destination
  * @src : string to be put at
  *
- * Return: 0 or 1
+ * Return: a string
  */
 char *_strcat(char *dest, char *src)
 {
