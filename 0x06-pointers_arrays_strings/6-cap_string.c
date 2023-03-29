@@ -8,6 +8,7 @@
 char *cap_string(char *s)
 {
 int x;
+int j;
 int a[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 for (x = 0; s[x] != '\0'; x++)
 {
