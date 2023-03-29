@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * _strcpy - copies a string into another string
- * @src : string to be copied
- * @dest : string to be placed at
+ * string_toupper - changes all lowercase letters of a string to uppercase.
+ * @s : string to be capitalized
  *
  * Return: 0 or 1
  */
