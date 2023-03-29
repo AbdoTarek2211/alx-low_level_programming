@@ -1,0 +1,21 @@
+#include "main.h"
+/**
+ * _strcpy - copies a string into another string
+ * @src : string to be copied
+ * @dest : string to be placed at
+ *
+ * Return: 0 or 1
+ */
+void reverse_array(int *a, int n)
+{
+int temp = n - 1;
+int x;
+int y;
+for (x = 0; x <= n / 2; x++)
+{
+  y = a[i];
+  a[i] = a[temp];
+  a[temp] = y;
+  temp--;
+}
+}

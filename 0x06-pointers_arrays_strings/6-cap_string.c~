@@ -1,0 +1,25 @@
+#include "main.h"
+/**
+ * _strcpy - copies a string into another string
+ * @src : string to be copied
+ * @dest : string to be placed at
+ *
+ * Return: 0 or 1
+ */
+char *cap_string(char *s)
+{
+int x;
+for (x = 0; s[x] != '\0'; x++)
+{
+if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
+s[i] -= 32;
+if (s[x] == '\n' || s[x] == ' ' || s[x] == ',' || s[x] == ';' || s[x] == '.' || s[x] == '!' || s[x] == '?' || s[x] == '(' || s[x] == ')' || s[x] == '{'|| s[x] == '}' || s[x] == '\t' || s[x] == '"')
+{
+if (s[x + 1] >= 'a' && s[x + 1] <= 'z')
+{
+s[x + 1] = s[x + 1] - 32;
+}
+}
+}
+return (s);
+}
