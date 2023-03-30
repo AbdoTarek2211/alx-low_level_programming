@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * leet - encodes a string into 1337.
+ * rot13 - encodes a string using rot13.
  * @s : string to be copied
  *
  * Return: 0 or 1
