@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_chessboard - Entry point
+ * print_diagsums - Entry point
  * @a: array
  * Return: Always 0 (Success)
  */
@@ -14,5 +14,5 @@ for (x = 0; x < size; x++)
 temp += a[(size * x) + x];
 temp2 += a[(size * (x + 1) - (x + 1))];
 }
-printf("%d, %d\n", sum1, sum2);
+printf("%d, %d\n", temp, temp2);
 }
