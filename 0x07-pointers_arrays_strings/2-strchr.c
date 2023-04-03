@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- * _memcpy - function copies the first n bytes of the memory area
- * @dest : string to be filled
- * @src : string to fill with
- * @n : number of times to fill
+ * _strchr - Returns a pointer to the first occurrence of a character
+ * @s : string to find in
+ * @c : character to be found
  *
  * Return: a string
  */
