@@ -14,11 +14,10 @@ char *x;
 x = haystack;
 while (*needle == *haystack)
 {
-haystack++;
-needle++;
+haystack++, needle++;
 }
 if (*needle == '\0')
-return (x);
+return (temp);
 haystack++;
 }
 return (0);
