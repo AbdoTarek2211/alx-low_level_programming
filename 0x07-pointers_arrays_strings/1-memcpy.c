@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _memset - function fills the first n bytes of the memory area
- * @s : string to be filled
- * @b : string to fill with
+ * _memcpy - function copies the first n bytes of the memory area
+ * @dest : string to be filled
+ * @src : string to fill with
  * @n : number of times to fill
  *
  * Return: a string
