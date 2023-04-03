@@ -8,8 +8,9 @@
 void print_diagsums(int *a, int size)
 {
 int x;
-unsigned int temp = 0;
-unsigned int temp2 = 0;
+unsigned int temp, temp2
+temp = 0;
+temp2 = 0;
 for (x = 0; x < size; x++)
 {
 temp += a[(size * x) + x];
