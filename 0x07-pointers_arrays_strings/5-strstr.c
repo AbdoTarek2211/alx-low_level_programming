@@ -8,17 +8,17 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-while (*haystack)
+char *p = haystack;
+char *j = needle;
+for (; *haystack != '\0'; haystack++)
 {
-char *x;
-x = haystack;
-while (*needle == *haystack)
+while (*p == *j && *j != '\0')
 {
-haystack++, needle++;
+p++;
+j++;
 }
-if (*needle == '\0')
-return (x);
-haystack++;
+if (*j == '\0')
+return (haystack);
 }
 return (0);
 }
