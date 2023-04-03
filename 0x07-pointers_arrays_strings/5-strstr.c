@@ -17,7 +17,7 @@ while (*needle == *haystack)
 haystack++, needle++;
 }
 if (*needle == '\0')
-return (temp);
+return (x);
 haystack++;
 }
 return (0);
