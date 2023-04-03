@@ -26,6 +26,7 @@ for (x = 0; x < size; x++)
 {
 for (; z >= 0; z--)
 {
+if (z == (z-x))
 temp2 += a[x][z];
 }
 }
