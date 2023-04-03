@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * _strstr - locates a substring
- * @haystack: input
- * @needle: input
+ * print_chessboard - prints the chessboard.
+ * @a: array
  * Return: 0
  */
 void print_chessboard(char (*a)[8])
