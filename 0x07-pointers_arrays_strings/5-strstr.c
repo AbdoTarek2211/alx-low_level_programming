@@ -12,7 +12,7 @@ while (*haystack != '\0')
 {
 char *x;
 x = haystack;
-while (*haystack == *needle)
+while (*needle == *haystack)
 {
 haystack++;
 needle++;
