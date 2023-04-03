@@ -7,30 +7,11 @@
 void print_diagsums(int *a, int size)
 {
 int x;
-int y;
 int temp = 0;
 int temp2 = 0;
 for (x = 0; x < size; x++)
 {
-for (y = 0; y < size; y++)
-{
-if (x == y)
-{
-temp += a[x][y];
+temp += a[(size * x) + x];
+temp2 += a[(size * (x + 1) - (x + 1)];
 }
-}
-}
-_putchar(temp);
-int z = size - 1;
-for (x = 0; x < size; x++)
-{
-for (; z >= 0; z--)
-{
-if (z == (z-x))
-temp2 += a[x][z];
-}
-}
-_putchar(',');
-_putchar(' ');
-_putchar(temp2);
 }
