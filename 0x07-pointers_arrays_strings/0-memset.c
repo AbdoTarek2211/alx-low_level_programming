@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * _strcat - concatenates two strings
- * @dest : string to append to
- * @src : string to be added
+ * _memset - function fills the first n bytes of the memory area pointed to by s with the constant byte b
+ * @s : string to be filled
+ * @b : string to fill with
+ * @n : number of times to fill
  *
  * Return: a string
  */
