@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * print_diagsums - Entry point
+ * print_diagsums - sum of the two diagonals of a square matrix
  * @a: array
+ * @size : size of array
  * Return: Always 0 (Success)
  */
 void print_diagsums(int *a, int size)
@@ -14,5 +15,8 @@ for (x = 0; x < size; x++)
 temp += a[(size * x) + x];
 temp2 += a[(size * (x + 1) - (x + 1))];
 }
-printf("%d, %d\n", temp, temp2);
+_putchar(temp);
+_putchar(',');
+_putchar(' ');
+_putchar(temp2);
 }
