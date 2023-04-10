@@ -13,7 +13,7 @@ int x = 0;
 while (x < argc)
 {
 x++;
-argv++;
+(*argv)++;
 }
 printf("%i\n", number - 1);
 return (0);
