@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
- /**
+/**
  * main - main function
  * @argc: count of program
  * @argv: number of arguments used
