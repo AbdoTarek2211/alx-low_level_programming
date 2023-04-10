@@ -15,6 +15,6 @@ while (x < argc)
 x++;
 (*argv)++;
 }
-printf("%i\n", number - 1);
+printf("%i\n", x - 1);
 return (0);
 }
