@@ -3,8 +3,8 @@
 #include <stddef.h>
 #include <stdio.h>
 /**
- * alloc_grid - returns a pointer to a 2 dimensional array
- * @width: size of width
+ * free_grid - frees a 2 dimensional array
+ * @grid: array to be freed
  * @height: size of height
  *
  * Return: always 0.
