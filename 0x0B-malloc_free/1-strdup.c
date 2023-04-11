@@ -3,9 +3,8 @@
 #include <stddef.h>
 #include <stdio.h>
 /**
- * create_array - creates an array of chars, and initializes
- * @size: size of array
- * @c: array to be passsed
+ * _strdup - returns a pointer to a new string
+ * @str: array to be passed
  *
  * Return: always 0.
  */
@@ -21,13 +20,13 @@ while (*str != '\0')
 strsize++;
 str++;
 }
-temp = malloc((strsize + 1) * sizeof(char));
+strsize++;
+temp = malloc(strsize * sizeof(char));
 if (temp == NULL)
 return (NULL);
-for (i = 0; i <= strsize; i++)
+for (i = 0; i < strsize; i++)
 {
 temp[i] = str[i];
 }
-free(str);
 return (temp);
 }
