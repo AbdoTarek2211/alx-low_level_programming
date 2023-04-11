@@ -21,7 +21,7 @@ strsize++;
 str++;
 }
 strsize++;
-temp = malloc(strsize * sizeof(char));
+temp = malloc(strsize *sizeof(char));
 if (temp == NULL)
 return (NULL);
 for (i = 0; i < strsize; i++)
