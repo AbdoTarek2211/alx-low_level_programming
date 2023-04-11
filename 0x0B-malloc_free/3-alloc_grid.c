@@ -19,7 +19,11 @@ temp = malloc((width * height) *sizeof(int));
 if (temp == NULL)
 return (NULL);
 for (i = 0; i < width; i++)
+{
 for (j = 0; j < height; j++)
+{
 temp[i * height + j] = 0;
-return (*temp);
+}
+}
+return (temp);
 }
