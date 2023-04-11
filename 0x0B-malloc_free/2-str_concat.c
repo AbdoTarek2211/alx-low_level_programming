@@ -6,7 +6,7 @@
  * str_concat - concatenates two strings
  * @s1: array to be passed
  * @s2: array to be passed
- * 
+ *
  * Return: always 0.
  */
 char *str_concat(char *s1, char *s2)
@@ -24,7 +24,7 @@ sizes1++;
 while (*(sizes2 + s2) != '\0')
 sizes2++;
 sizes2++;
-temp = malloc((sizes2 + sizes1) * sizeof(char));
+temp = malloc((sizes2 + sizes1) *sizeof(char));
 if (temp == NULL)
 return (NULL);
 for (i = 0; i < sizes1; i++)
