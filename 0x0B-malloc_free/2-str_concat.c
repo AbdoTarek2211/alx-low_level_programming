@@ -3,9 +3,10 @@
 #include <stddef.h>
 #include <stdio.h>
 /**
- * _strdup - returns a pointer to a new string
- * @str: array to be passed
- *
+ * str_concat - concatenates two strings
+ * @s1: array to be passed
+ * @s2: array to be passed
+ * 
  * Return: always 0.
  */
 char *str_concat(char *s1, char *s2)
