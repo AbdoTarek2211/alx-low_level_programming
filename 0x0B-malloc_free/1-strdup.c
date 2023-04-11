@@ -15,7 +15,7 @@ char *temp;
 strsize = 0;
 if (str == NULL)
 return (NULL);
-while (*str != '\0')
+while (*(strsize + str) != '\0')
 {
 strsize++;
 }
