@@ -26,7 +26,7 @@ if (temp == NULL)
 return (NULL);
 for (i = 0; i < strsize; i++)
 {
-temp[i] = str[i];
+*(temp + i) = *(str + i);
 }
 return (temp);
 }
