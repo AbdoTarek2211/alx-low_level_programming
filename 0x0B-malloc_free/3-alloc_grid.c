@@ -22,6 +22,16 @@ free(temp);
 return (NULL);
 }
 for (i = 0; i < height; i++)
+{
+temp[i] = (int *) malloc(width * sizeof(int));
+if (temp[i] == NULL)
+{
+for (; i >= 0; i--)
+free(temp[i]);
+free(temp);
+return (NULL);
+}
+for (i = 0; i < height; i++)
 for (j = 0; j < width; j++)
 *(*(temp + i) + j) = 0;
 return (temp);
