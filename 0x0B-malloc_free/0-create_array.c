@@ -17,7 +17,7 @@ if (size == 0 || temp == NULL)
 return (NULL);
 else
 {
-for (i = 0; i < size; i++)
+for (i = size; i >= 0; i--)
 {
 temp[i] = c;
 }
