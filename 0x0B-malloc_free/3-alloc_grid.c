@@ -15,7 +15,7 @@ int i, j;
 int **temp;
 if (width <= 0 || height <= 0)
 return (NULL);
-temp = (int **) malloc(height *sizeof(int *));
+temp = (int **) malloc(height * sizeof(int *));
 if (temp == NULL)
 {
 free(temp);
