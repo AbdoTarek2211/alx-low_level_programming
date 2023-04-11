@@ -30,6 +30,6 @@ return (NULL);
 for (i = 0; i < sizes1; i++)
 temp[i] = s1[i];
 for (i = sizes1; i < (sizes1 + sizes2); i++)
-temp[i] = s2[i - size1];
+temp[i] = s2[i - sizes1];
 return (temp);
 }
