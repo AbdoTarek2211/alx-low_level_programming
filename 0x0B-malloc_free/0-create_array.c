@@ -16,7 +16,9 @@ return (NULL);
 else
 {
 for (i = 0; i < size; i++)
+{
 temp[i] = c;
+}
 return (temp);
 }
 }
