@@ -18,9 +18,9 @@ if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-while ((sizes1 + s1) != '\0')
+while (*(sizes1 + s1) != '\0')
 sizes1++;
-while ((sizes2 + s2) != '\0')
+while (*(sizes2 + s2) != '\0')
 sizes2++;
 sizes2++;
 temp = malloc((sizes2 + sizes1) * sizeof(char));
