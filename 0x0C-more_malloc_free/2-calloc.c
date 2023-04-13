@@ -17,7 +17,7 @@ return (NULL);
 temp = malloc(nmemb * size);
 if (temp == NULL)
 return (NULL);
-for (i = 0; i < (size * nmemb); i++)
+for (i = (size * nmemb); i > 0; i--)
 temp[i] = 0;
 return (temp);
 }
