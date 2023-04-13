@@ -6,6 +6,7 @@
  * @s1: first string
  * @s2: second string
  * @n : size of characters
+ *
  * Return: always 0.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -24,7 +25,7 @@ for (y = 0; s2[y] != '\0'; y++)
 }
 if (n > y)
 n = y;
-temp = malloc(((x + n) + 1));
+temp = malloc(((x + n) +1));
 if (temp == NULL)
 return (NULL);
 for (x = 0; s1[x] != '\0'; x++)
