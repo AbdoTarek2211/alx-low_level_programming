@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stddef.h>
 #include <stdio.h>
 /**
  * string_nconcat - concatenates two strings.
@@ -25,7 +24,7 @@ for (y = 0; s2[y] != '\0'; y++)
 }
 if (n > y)
 n = y;
-newString = malloc(((x + n) + 1));
+temp = malloc(((x + n) + 1));
 if (temp == NULL)
 return (NULL);
 for (x = 0; s1[x] != '\0'; x++)
