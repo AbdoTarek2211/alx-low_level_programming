@@ -10,7 +10,7 @@
 void *malloc_checked(unsigned int b)
 {
 void *temp;
-temp = malloc(b *sizeof(char));
+temp = malloc(b);
 if (temp == NULL)
 printf(%d ,98);
 else
