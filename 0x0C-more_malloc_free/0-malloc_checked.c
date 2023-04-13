@@ -12,7 +12,6 @@ void *malloc_checked(unsigned int b)
 void *temp;
 temp = malloc(b);
 if (temp == NULL)
-printf(%d ,98);
-else
+exit(98)
 return (temp);
 }
