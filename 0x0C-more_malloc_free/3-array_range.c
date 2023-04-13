@@ -19,7 +19,7 @@ return (NULL);
 temp = (int *) malloc((max - min + 1) * sizeof(int));
 if (temp == NULL)
 return (NULL);
-for (k = 0; i < j; k++, i++)
+for (k = 0; i <= j; k++, i++)
 temp[k] = i;
 return (temp);
 }
