@@ -9,7 +9,7 @@
  */
 void *malloc_checked(unsigned int b)
 {
-char *temp;
+void *temp;
 temp = malloc(b *sizeof(char));
 if (temp == NULL)
 printf(%d ,98);
