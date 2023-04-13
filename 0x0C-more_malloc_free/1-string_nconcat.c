@@ -30,7 +30,7 @@ return (NULL);
 for (x = 0; s1[x] != '\0'; x++)
 temp[x] = s1[x];
 for (y = 0; y != n; y++, x++)
-temp[a] = s2[y];
+temp[x] = s2[y];
 temp[x] = '\0';
 return (temp);
 }
