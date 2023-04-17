@@ -18,6 +18,6 @@ printf("Age: %f\n", d->age);
 if (!d->owner)
 printf("Owner: (nil)\n");
 else
-printf("Age: %d\n", d->age);
+printf("Owner: %d\n", d->owner);
 }
 }
