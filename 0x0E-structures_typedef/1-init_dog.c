@@ -3,10 +3,10 @@
 /**
  * init_dog - initializes the init_dog
  * @d: dog struct
- * @name: Dog's name
- * @age: Dog's age
- * @owner: name f dog's owner
- * Return: the tags filled.
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: name of dog's owner
+ * Return: 0 or 1
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
@@ -16,6 +16,5 @@ d->name = name;
 d->age = age;
 d->owner = owner;
 }
-else
 return;
 }
