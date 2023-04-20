@@ -16,7 +16,7 @@ seperator = "";
 va_start(list,n)
 for (i = 0; i < n; i++)
 {
-printf("%d", va_arg(list,int));
+printf("%d", va_arg(list, int));
 if (n == i + 1)
 break;
 printf("%s", seperator);
