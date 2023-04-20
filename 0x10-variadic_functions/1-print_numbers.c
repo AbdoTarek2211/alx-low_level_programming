@@ -9,7 +9,7 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-va_list = list;
+va_list list;
 unsigned int i;
 if (separator == NULL)
 separator = "";
