@@ -13,7 +13,7 @@ va_list list;
 unsigned int i;
 if (separator == NULL)
 separator = "";
-va_start(list, n)
+va_start(list, n);
 for (i = 0; i < n; i++)
 {
 printf("%d", va_arg(list, int));
