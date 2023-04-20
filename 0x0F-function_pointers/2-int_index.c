@@ -16,7 +16,7 @@ if (array == NULL)
 return (-1);
 if (cmp == NULL)
 return (-1);
-for (x = 0; x < size; i++)
+for (x = 0; x < size; x++)
 {
 if (cmp(array[x] >= 0)
 return (x);
