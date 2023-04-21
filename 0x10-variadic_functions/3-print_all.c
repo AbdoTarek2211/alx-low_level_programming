@@ -1,87 +1,49 @@
 #include "variadic_functions.h"
-#include <stdio.h>
 #include <stdarg.h>
+#include <stdio.h>
 /**
- * op_c - print character
- * @list: va_list
- *
- * Return: Nothing.
- */
-void op_c(va_list list)
-{
-printf("%c", va_arg(list, int));
-}
-/**
- * op_i - Print Integer
- * @list: va_list
- *
- * Return: Nothing.
- */
-void op_i(va_list list)
-{
-printf("%i", va_arg(list, int));
-}
-/**
- * op_f - print float numbers
- * @list: va_list
- *
- * Return: Nothing.
- */
-void op_f(va_list list)
-{
-printf("%f", va_arg(list, double));
-}
-/**
- * op_s -print string
- * @list: name va_list
- *
- * Return: Nothing.
- */
-void op_s(va_list list)
-{
-char *str;
-str = va_arg(list, char *);
-if (str == NULL)
-{
-printf("(nil)");
-return;
-}
-printf("%s", str);
-}
-/**
- * print_all - prints everything
- * @format: type of data
- * Return: Always 0.
+ * print_all - prints all strings
+ * @format: the kind of format c for char s for string i for int f for
+ * float.
+ * Return: a string with tha arguments.
  */
 void print_all(const char * const format, ...)
 {
-va_list all;
-unsigned int x, y;
-char *separator = "";
-f ops[] = {
-{"c", op_c},
-{"i", op_i},
-{"f", op_f},
-{"s", op_s},
-};
-va_start(all, format);
-x = 0;
-while (format && format[x])
-{
-y = 0;
-while (y < 4)
-{
-if (op_s[y].op[0] == format[x])
-{
-printf("%s", separator);
-separator = ", ";
-ops[y].f(all);
-break;
-}
-y++;
-}
-x++;
-}
-printf("\n");
-va_end(all);
+	unsigned int i = 0;
+	char *str;
+	va_list list;
+
+	va_start(list, format);
+	while (format && format[i] != '\0')
+	{
+		switch (format[i])
+		{
+		case 'c':
+			printf("%c", va_arg(list, int));
+			break;
+		case 'i':
+			printf("%i", va_arg(list, int));
+			break;
+		case 'f':
+			printf("%f", va_arg(list, double));
+			break;
+		case 's':
+			str = va_arg(list, char *);
+			if (str)
+			{
+				printf("%s", str);
+				break;
+			}
+			printf("(nil)");
+			break;
+		default:
+			i++;
+			continue;
+		}
+		if (format[i + 1] != '\0')
+			printf(", ");
+		i++;
+	}
+	va_end(list);
+	printf("\n");
 }
