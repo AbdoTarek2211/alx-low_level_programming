@@ -37,7 +37,7 @@ printf("%f", va_arg(list, double));
  *
  * Return: Nothing.
  */
-void op_s(va_list form)
+void op_s(va_list list)
 {
 char *str;
 str = va_arg(form, char *);
