@@ -19,9 +19,11 @@ for (i = 0; i < n; i++)
 {
 temp = va_arg(list, char*);
 if (temp == NULL)
+{
 printf("(nil)");
-else
-printf("%s", va_arg(list,string));
+break;
+}
+printf("%s", temp);
 if (n == i + 1)
 break;
 printf("%s", separator);
