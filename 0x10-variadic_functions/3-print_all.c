@@ -3,51 +3,50 @@
 #include <stdarg.h>
 /**
  * op_c - print character
- * @form: va_list
+ * @list: va_list
  *
  * Return: Nothing.
  */
 void op_c(va_list list)
 {
-	printf("%c", va_arg(list, int));
+printf("%c", va_arg(list, int));
 }
 /**
  * op_i - Print Integer
- * @form: va_list
+ * @list: va_list
  *
  * Return: Nothing.
  */
 void op_i(va_list list)
 {
-	printf("%i", va_arg(list, int));
+printf("%i", va_arg(list, int));
 }
 /**
  * op_f - print float numbers
- * @form: va_list
+ * @list: va_list
  *
  * Return: Nothing.
  */
 void op_f(va_list list)
 {
-	printf("%f", va_arg(list, double));
+printf("%f", va_arg(list, double));
 }
 /**
  * op_s -print string
- * @form: name va_list
+ * @list: name va_list
  *
  * Return: Nothing.
  */
 void op_s(va_list form)
 {
-	char *str;
-
-	str = va_arg(form, char *);
-	if (str == NULL)
-	{
-		printf("(nil)");
-		return;
-	}
-	printf("%s", str);
+char *str;
+str = va_arg(form, char *);
+if (str == NULL)
+{
+printf("(nil)");
+return;
+}
+printf("%s", str);
 }
 /**
  * print_all - prints everything
