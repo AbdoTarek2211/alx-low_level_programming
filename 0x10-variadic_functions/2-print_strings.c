@@ -20,7 +20,7 @@ if (va_arg(list,string) == NULL)
 printf("(nil)");
 else
 printf("%s", va_arg(list,string));
-if (n == i + )
+if (n == i + 1)
 break;
 printf("%s", separator);
 }
