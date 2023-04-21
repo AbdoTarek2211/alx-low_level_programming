@@ -40,7 +40,7 @@ printf("%f", va_arg(list, double));
 void op_s(va_list list)
 {
 char *str;
-str = va_arg(form, char *);
+str = va_arg(list, char *);
 if (str == NULL)
 {
 printf("(nil)");
@@ -58,7 +58,7 @@ void print_all(const char * const format, ...)
 va_list all;
 unsigned int x, y;
 char *separator = "";
-f op_s[] = {
+f ops[] = {
 {"c", op_c},
 {"i", op_i},
 {"f", op_f},
