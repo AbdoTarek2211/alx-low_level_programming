@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * add_node - add a new node at the beginning
+ * add_node_end - add a new node at the end
  * @head: pointer to the list_t list to print
  * @str: string duplicated
  * Return: the number of nodes printed
