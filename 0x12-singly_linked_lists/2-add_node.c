@@ -18,6 +18,6 @@ return (NULL);
 temp->str = strdup(str);
 temp->len = i;
 temp->next = (*head);
-(*head) = new;
+(*head) = temp;
 return (temp);
 }
