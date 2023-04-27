@@ -5,7 +5,7 @@
  * print_list - prints all elements in list
  * @h : the list we working on
  *
- * Returns: size of list
+ * Return: size of list
  */
 size_t print_list(const list_t *h)
 {
