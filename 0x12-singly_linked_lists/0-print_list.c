@@ -9,14 +9,17 @@
  */
 size_t print_list(const list_t *h)
 {
-char *temp;
-unsigned int i;
-if (h->str == NULL)
-printf("[0] (nil)");
-temp = h->str;
-for (i = 0; i < h->len; i++)
+unsigned int counter = 0;
+if (h == NULL)
+return (0);
+while (h)
 {
-printf("%s", temp);
-temp = h->next;
+if (h->str == NULL)
+printf ("[%u] (nil)\n", h->len);
+else
+printf("[%u] %s\n", h->len, h->str);
+counter++;
+h = h->next;
 }
+return (count);
 }
