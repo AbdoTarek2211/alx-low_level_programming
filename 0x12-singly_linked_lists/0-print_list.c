@@ -5,7 +5,7 @@
  * print_list - prints all elements in list
  * @h : the list we working on
  *
- * Returns : 0 or 1
+ * Returns: size of list
  */
 size_t print_list(const list_t *h)
 {
@@ -15,7 +15,7 @@ return (0);
 while (h)
 {
 if (h->str == NULL)
-printf ("[%u] (nil)\n", h->len);
+printf("[%u] (nil)\n", h->len);
 else
 printf("[%u] %s\n", h->len, h->str);
 counter++;
