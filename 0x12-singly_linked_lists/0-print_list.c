@@ -18,8 +18,8 @@ if (h->str == NULL)
 printf("[%u] (nil)\n", h->len);
 else
 printf("[%u] %s\n", h->len, h->str);
-counter++;
 h = h->next;
+counter++;
 }
 return (counter);
 }
