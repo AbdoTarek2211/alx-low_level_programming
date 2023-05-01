@@ -20,6 +20,7 @@ nd->next = NULL;
 if (idx == 0)
 {
 nd->next = (*head);
+(*head) = nd;
 return (nd);
 }
 for (; x < idx && temp; x++)
@@ -27,6 +28,7 @@ for (; x < idx && temp; x++)
 if (x + 1 == idx)
 {
 nd->next = temp->next;
+temp->next = nd;
 return (nd);
 }
 else
