@@ -2,8 +2,8 @@
 #include "lists.h"
 /**
  * add_nodeint - returns number of elements
- * @h: pointer to the list_t list to print
- *
+ * @head: pointer to the head list to add to
+ * @n: number to be added
  * Return: the number of nodes printed
  */
 listint_t *add_nodeint(listint_t **head, const int n)
