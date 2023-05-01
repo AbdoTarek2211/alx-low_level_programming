@@ -15,7 +15,7 @@ if ((*head) == NULL)
 return (-1);
 if (index == 0)
 {
-*head = head->next;
+(*head) = (*head)->next;
 free(temp);
 return (1);
 }
