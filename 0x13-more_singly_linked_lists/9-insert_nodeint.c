@@ -28,6 +28,7 @@ for (; x < idx && temp; x++)
 if (i + 1 == idx)
 {
 nd->next = temp->next;
+temp->next = nd;
 return (new);
 }
 else
