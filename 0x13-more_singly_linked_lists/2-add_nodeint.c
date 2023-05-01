@@ -15,5 +15,5 @@ return (NULL);
 temp->n = n;
 temp->next = (*head);
 (*head) = temp;
-return (head);
+return (*head);
 }
