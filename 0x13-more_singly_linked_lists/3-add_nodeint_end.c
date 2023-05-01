@@ -18,10 +18,10 @@ temp->n = n;
 if (*head == NULL)
 {
 *head = temp;
-return (temp);
+return (*head);
 }
 while (re->next)
 re = re->next;
 re->next = temp;
-return (temp);
+return (*head);
 }
