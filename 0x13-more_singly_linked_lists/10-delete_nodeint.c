@@ -16,7 +16,7 @@ return (-1);
 if (index == 0)
 {
 (*head) = head->next;
-free(temp)
+free(temp);
 return (1);
 }
 for (; x < index - 1; x++)
@@ -26,7 +26,7 @@ return (-1);
 temp = temp->next;
 }
 position = temp->next;
-temp-next = position->next;
+temp->next = position->next;
 free(position);
 return (1);
 }
