@@ -12,7 +12,10 @@ list_t *temp;
 list_t *re = *head;
 temp = malloc(sizeof(list_t));
 if (temp == NULL)
-return (NULL);
+{
+free(temp);
+return (temp);
+}
 temp->next = NULL;
 temp->n = n;
 if (*head == NULL)
