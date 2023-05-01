@@ -14,5 +14,6 @@ if (temp == NULL)
 return (NULL);
 temp->n = n;
 temp->next = (*head);
-return (temp);
+(*head) = temp;
+return (head);
 }
