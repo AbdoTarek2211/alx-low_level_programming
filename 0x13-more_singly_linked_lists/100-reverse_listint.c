@@ -14,9 +14,9 @@ while (*head)
 {
 after = (*head)->next;
 (*head)->next = before;
-before = (*head);
-(*head) = next;
+before = *head;
+*head = after;
 }
-(*head) = before;
+*head = before;
 return (*head);
 }
