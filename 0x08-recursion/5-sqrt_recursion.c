@@ -8,7 +8,7 @@ int _sqrt_recursion(int n)
 {
 if (n < 0)
 return (-1);
-return (sq_rec(n, 0));
+return (sq_recu(n, 0));
 }
 /**
  * sq_rec - find natural number
@@ -17,7 +17,7 @@ return (sq_rec(n, 0));
  *
  * Return: the resulting square root
  */
-int sq_rec(int n, int i)
+int sq_recu(int n, int i)
 {
 if (i * i > n)
 return (-1);
