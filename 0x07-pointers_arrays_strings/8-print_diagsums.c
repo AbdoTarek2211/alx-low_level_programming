@@ -7,17 +7,16 @@
  */
 void print_diagsums(int *a, int size)
 {
-int x;
-unsigned int temp, temp2;
-temp = 0;
-temp2 = 0;
-for (x = 0; x < size; x++)
+int sum1, sum2, y;
+sum1 = 0;
+sum2 = 0;
+for (y = 0; y < size; y++)
 {
-temp += a[(size * x) + x];
-temp2 += a[(size * (x + 1) - (x + 1))];
+sum1 = sum1 + a[y * size + y];
 }
-_putchar(temp);
-_putchar(',');
-_putchar(' ');
-_putchar(temp2);
+for (y = size - 1; y >= 0; y--)
+{
+sum2 += a[y * size + (size - y - 1)];
+}
+printf("%d, %d\n", sum1, sum2);
 }
