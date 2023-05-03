@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * is_digit - checks if a string contains a non-digit char
- * @s: string to be evaluated
+ * is_digit - checks strings
+ * @s: string checked
  *
- * Return: 0 if a non-digit is found, 1 otherwise
+ * Return: 0 or 1
  */
 int is_digit(char *s)
 {
@@ -19,8 +19,8 @@ i++;
 return (1);
 }
 /**
- * _strlen - returns the length of a string
- * @s: string to evaluate
+ * _strlen - gets length of string
+ * @s: checked string
  *
  * Return: the length of the string
  */
@@ -35,10 +35,10 @@ return (i);
 }
 /**
  * main - multiplies two positive numbers
- * @argc: number of arguments
- * @argv: array of arguments
+ * @argc: arg count
+ * @argv: arg vector
  *
- * Return: always 0 (Success)
+ * Return: always 0
  */
 int main(int argc, char *argv[])
 {
