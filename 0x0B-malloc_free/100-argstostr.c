@@ -3,9 +3,8 @@
 /**
   *argstostr - concatenates all arguments of the program.
   *@ac: argument count.
-  *@av: pointer to array of size ac.
-  *Return: NULL if ac == 0 or av == null, Pointer to new string.
-  *NULL on fail.
+  *@av: pointer
+  *Return: 0 or 1
   */
 char *argstostr(int ac, char **av)
 {
