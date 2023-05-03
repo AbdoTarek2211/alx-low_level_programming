@@ -1,19 +1,27 @@
 #include "main.h"
 /**
- * is_prime_number - returns the prime
- * @n : number to be powered
- * Return: 0 or 1
+ * realPrime - evaluate prime
+ * @n: number to evaluate
+ * @i: iterator
+ * Return: 1 if n is prime, 0 if not
+ */
+int realPrime(int n, int i)
+{
+if (i == 1)
+return (1);
+if (n % i == 0 && i > 0)
+return (0);
+return (realPrime(n, i - 1));
+}
+/**
+ * is_prime_number - says if an integer is a prime number or not
+ * @n: number to evaluate
+ *
+ * Return: 1 if n is a prime number, 0 if not
  */
 int is_prime_number(int n)
 {
-if (prime <= 1)
+if (n <= 1)
 return (0);
-if (prime == 2)
-return (1);
-if ((prime % 2 == 0) || (prime % 3 == 0) || (prime % 5 == 0))
-return (0);
-else if (prime % 9 == 0 || prime % 7 == 0)
-return (0);
-else
-return (1);
+return (realPrime(n, n - 1));
 }
