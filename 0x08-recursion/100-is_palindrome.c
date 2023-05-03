@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * _lenght - checks the length of a string
+  * leng - checks the length of a string
   * @s: string
   * Return: length of string
 **/
@@ -11,7 +11,7 @@ return (0);
 return (1 + leng(s + 1));
 }
 /**
- * checkp - checks if the string is palindrome
+ * chck - checks if the string is palindrome
  * @i: index
  * @lg: string length
  * @s: string
