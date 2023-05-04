@@ -19,7 +19,7 @@ x++;
 }
 for (; x >= 0; x--)
 {
-if ((n >> x) & 1)
+if ((n >> x) &1)
 printf("1");
 else
 printf("0");
