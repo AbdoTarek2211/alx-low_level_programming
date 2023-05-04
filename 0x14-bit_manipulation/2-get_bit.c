@@ -12,5 +12,5 @@ unsigned long int i;
 if (index > 64)
 return (-1);
 i = n >> index;
-return (i &1);
+return (i & 1);
 }
