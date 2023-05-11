@@ -10,13 +10,13 @@ int append_text_to_file(const char *filename, char *text_content)
 int fname, writef, count = 0;
 if (filename == NULL)
 return (-1);
-if (text_content != NULL)
+if (text_content)
 {
 while (text_content[count])
 count++;
 }
 fname = open(filename, O_WRONLY | O_APPEND);
-writef = write(file, text_content, count);
+writef = write(fname, text_content, count);
 if (fname == -1 || writef == -1)
 return (-1);
 close(fname);
