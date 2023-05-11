@@ -13,7 +13,7 @@ if (filename == NULL)
 return (-1);
 if (text_content)
 {
-while(text_content[count])
+while (text_content[count])
 count++;
 }
 fname = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
