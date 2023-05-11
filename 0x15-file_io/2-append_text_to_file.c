@@ -22,4 +22,3 @@ return (-1);
 close(fname);
 return (1);
 }
-}
